@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SellerPostService">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPostSer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue2">
+
+            <ImageButton
+                android:id="@+id/PostBackToSellerAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/dark_blue2"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Seller_ServicePost_PageTitle"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/light_grey3" />-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:layout_below="@+id/linearLayoutPostSer"
+            android:layout_above="@id/linearBtnPublish"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="17dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="@string/Seller_ServicePost_Title"/>
+
+                <EditText
+                    android:id="@+id/seller_serviceTitle"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="14dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:hint="@string/Seller_ServicePost_TitleDesc"
+                    android:textColorHint="@color/grey"/>
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="@string/Seller_ServicePost_Desc"/>
+
+                <EditText
+                    android:id="@+id/seller_serviceDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_input"
+                    android:layout_gravity="center"
+                    android:paddingBottom="60dp"
+                    android:gravity="top"
+                    android:paddingTop="15dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="14dp"
+                    android:lineSpacingExtra="3dp"
+                    android:hint="@string/Seller_ServicePost_DesSub"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textColorHint="@color/grey"/>
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="@string/Seller_ServicePost_CategoryTitle"/>
+
+                <RadioGroup
+                    android:id="@+id/ser_categoryGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/seller_serRadioGraphic"
+                        android:layout_width="200dp"
+                        android:layout_height="28dp"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="13dp"
+                        android:text="@string/GraphicTitle" />
+
+                    <RadioButton
+                        android:id="@+id/seller_serRadioTech"
+                        android:layout_width="200dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="13dp"
+                        android:text="@string/TechTitle" />
+
+                    <RadioButton
+                        android:id="@+id/seller_serRadioWriting"
+                        android:layout_width="200dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="13dp"
+                        android:textSize="14dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/WritingTitle" />
+
+                    <RadioButton
+                        android:id="@+id/seller_serRadioData"
+                        android:layout_width="200dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="13dp"
+                        android:text="@string/DataTitle" />
+
+                    <RadioButton
+                        android:id="@+id/seller_serRadioVideo"
+                        android:layout_width="200dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="13dp"
+                        android:textSize="14dp"
+                        android:text="@string/VideoTitle" />
+
+                    <RadioButton
+                        android:id="@+id/seller_serRadioMarketing"
+                        android:layout_width="200dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14dp"
+                        android:text="@string/MarketingTitle" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="@string/Seller_ServicePost_PriceTitle"/>
+
+                <EditText
+                    android:id="@+id/seller_servicePrice"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="15dp"
+                    android:hint="@string/Seller_ServicePost_PriceDesc"
+                    android:textColor="@color/black"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="@string/Seller_ServicePost_DeliveryDaysTitle"/>
+
+                <EditText
+                    android:id="@+id/seller_serviceDays"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="12dp"
+                    android:textSize="15dp"
+                    android:paddingEnd="12dp"
+                    android:hint="@string/Seller_ServicePost_DeliveryDaysDesc"
+                    android:textColor="@color/black"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="@string/Seller_ServicePost_ImageUpload"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/seller_serPhoto"
+                        android:layout_width="42dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_add_photo" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearBtnPublish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/btn_SerPublish"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:stateListAnimator="@null"
+                app:cornerRadius="10dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:text="@string/btn_publish"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

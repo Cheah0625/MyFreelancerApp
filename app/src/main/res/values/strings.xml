@@ -1,0 +1,517 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MyFreelancer</string>
+
+
+    <string name="login_email">Email Address</string>
+    <string name="login_password">Password</string>
+    <string name="login_FPassword">Forgot Password?</string>
+    <string name="btn_login">LOG IN</string>
+
+    <string name="reset_emailHint">Enter Your Email Address</string>
+    <string name="reset_info">The confirmation link will be sent to your email.</string>
+    <string name="reset_MainTitle">RESET PASSWORD</string>
+    <string name="btn_reset">RESET</string>
+
+    <string name="SignUp">Create Profile</string>
+    <string name="SignUp_FullName">Full Name</string>
+    <string name="SignUp_FullNameHint">Enter Full Name</string>
+    <string name="SignUp_Email">Email Address</string>
+    <string name="SignUp_EmailHint">Enter Email Address (Required for Verification)</string>
+    <string name="SignUp_PhoneContact">Phone Contact</string>
+    <string name="SignUp_PhoneContactHint">Enter Phone Contact</string>
+    <string name="SignUp_Location">Location (City,State)</string>
+    <string name="SignUp_LocationHint">Enter Location (Eg: Petaling Jaya, Selangor)</string>
+    <string name="SignUp_Password">Password</string>
+    <string name="SignUp_PasswordHint">Enter Password</string>
+    <string name="SignUp_ConfirmPassword">Confirm Password</string>
+    <string name="SignUp_ConfirmPasswordHint">Enter Confirm Password</string>
+    <string name="btn_signUp">SIGN UP</string>
+
+
+    <string name="BuyerHomeTitle">CATEGORY</string>
+    <string name="BuyerHomeTitle2">RECENTLY VIEW</string>
+    <string name="BuyerHomeTitle3">LOWEST PRICE</string>
+    <string name="GraphicTitle">Graphics &amp; Design</string>
+    <string name="GraphicDesc">Logo &amp; Brand Identify, Art &amp; Illustration, Packaging...</string>
+    <string name="GraphicDesc2">Art &amp; Illustration</string>
+    <string name="WritingTitle">Writing &amp; Translation</string>
+    <string name="WritingDesc">Articles &amp; Blog Posts, Content Writing, Translation...</string>
+    <string name="VideoTitle">Video &amp; Animation</string>
+    <string name="VideoDesc">Character &amp; Logo Animation, Video Editing, Trailers... </string>
+    <string name="TechTitle">Programming &amp; Tech</string>
+    <string name="TechDesc">Website Builders &amp; CMS, Mobile Apps, Gaming...</string>
+    <string name="DataTitle">Data</string>
+    <string name="DataDesc">Data Entry, Data Analytics &amp; Visualisation...</string>
+    <string name="OthersTitle">Lifestyle &amp; Other</string>
+    <string name="OthersDesc">Online Tutoring, Travelling...</string>
+    <string name="MarketingTitle">Digital Marketing</string>
+    <string name="MarketingDesc">Social Media Advertising, Marketing...</string>
+
+    <string name="BuyerAcc_Title_Profile">ACCOUNT</string>
+    <string name="BuyerAcc_Title_Project">MY PROJECT</string>
+    <string name="BuyerAcc_Title_General">GENERAL</string>
+
+    <string name="BuyerAcc_btn_editProfile">Edit Profile</string>
+    <string name="BuyerAcc_btn_addPostings">Post Project</string>
+    <string name="BuyerAcc_btn_managePostings">Manage Postings</string>
+    <string name="BuyerAcc_btn_switchUser">Switch to Seller</string>
+    <string name="BuyerAcc_btn_faq">FAQs</string>
+    <string name="BuyerAcc_btn_support">Support</string>
+    <string name="BuyerAcc_btn_logout">Logout</string>
+
+    <string name="BuyerAcc_postProject_UpperTitle">General Information</string>
+    <string name="BuyerAcc_postProject_UpperTitle2">Project Information</string>
+    <string name="BuyerAcc_postProject_MainTitle">Post a Project</string>
+    <string name="BuyerAcc_postProject_Name">Alan Lee</string>
+    <string name="BuyerAcc_postProject_Location">Petaling Jaya, Selangor</string>
+    <string name="BuyerAcc_postProject_Email">alanlee@gmail.com</string>
+    <string name="BuyerAcc_postProject_Contact">0102485976</string>
+    <string name="BuyerAcc_postProject_Title">Title </string>
+    <string name="BuyerAcc_postProject_TitleDesc">Enter Project Title</string>
+    <string name="BuyerAcc_postProject_Desc">Description</string>
+    <string name="BuyerAcc_postProject_DesSub">Enter Project Description</string>
+    <string name="BuyerAcc_postProject_CategoryTitle">Category</string>
+    <string name="BuyerAcc_postProject_BudgetTitle">Budget (RM)</string>
+    <string name="BuyerAcc_postProject_BudgetDesc">Enter Project Budget</string>
+    <string name="BuyerAcc_postProject_DeliveryDaysTitle">Delivery Days</string>
+    <string name="BuyerAcc_postProject_DeliveryDaysDesc">Enter Project Delivery Days</string>
+    <string name="BuyerAcc_postProject_StatusTitle">Status</string>
+
+    <string name="BuyerAcc_postProject_radioOpen">Open</string>
+    <string name="BuyerAcc_postProject_radioClose">Closed</string>
+    <string name="BuyerAcc_postProject_radioComplete">Completed</string>
+    <string name="btn_publish">PUBLISH</string>
+
+    <string name="editProfile">Edit Profile</string>
+    <string name="editProject">Edit Project</string>
+    <string name="btn_save">Save</string>
+
+    <string name="BuyerOrders_PageTitle">Orders</string>
+    <string name="BuyerOrders_btn_pending">Pending</string>
+    <string name="BuyerOrders_btn_workInProgress">Work in Progress</string>
+    <string name="BuyerOrders_btn_completed">Completed</string>
+    <string name="BuyerOrders_btn_rated">Rated</string>
+    <string name="BuyerOrders_btn_cancelled">Cancelled</string>
+    <string name="BuyerOrders_count">(Num)</string>
+
+    <string name="BuyerOrdersDetail_PageTitle">Order Details</string>
+    <string name="BuyerOrdersPenDetail_SignalTitle">Waiting For Processing</string>
+    <string name="SellerTaskPenDetail_SignalTitle">To Accept</string>
+    <string name="BuyerOrdersProgressDetail_SignalTitle">In Progress</string>
+    <string name="BuyerOrdersCompDetail_SignalTitle">Completed</string>
+    <string name="BuyerOrdersRatedDetail_SignalTitle">Rated</string>
+    <string name="BuyerOrdersCancelDetail_SignalTitle">Cancelled</string>
+    <string name="BuyerOrdersNo">Order No.</string>
+    <string name="BuyerOrdersNo_Data">No</string>
+    <string name="BuyerOrdersTime">Order Time</string>
+    <string name="BuyerOrdersTime_Data">Date Time</string>
+    <string name="BuyerOrdersAcceptedTime">Accepted Time</string>
+    <string name="BuyerOrdersAcceptedTime_Data">Date Time</string>
+    <string name="BuyerOrdersCompletedTime">Completed Time</string>
+    <string name="BuyerOrdersCompletedTime_Data">Date Time</string>
+    <string name="BuyerOrdersRatedTime">Rated Time</string>
+    <string name="BuyerOrdersRatedTime_Data">Date Time</string>
+    <string name="BuyerOrdersCancelTime">Cancelled Time</string>
+    <string name="BuyerOrdersCancelTime_Data">Date Time</string>
+    <string name="BuyerOrdersReminder">Reminder</string>
+    <string name="BuyerOrdersReminder_Data">If you have paid the order, kindly send a message to the freelancer for checking the payment and start processing your order.</string>
+    <string name="SellerReminder_Data">Kindly check the payment and proceed the order.</string>
+    <string name="BuyerOrdersReason">Cancellation Reason</string>
+    <string name="BuyerOrdersReasonDesc">Description</string>
+
+    <string name="BuyerProjectDetail_PageTitle">View Project Details</string>
+    <string name="BuyerProjectDetail_ProjectTitle">Project Name</string>
+    <string name="BuyerProjectDetail_ProjectDesc">Description</string>
+    <string name="BuyerProjectDetail_ProjectCatTitle">Category</string>
+    <string name="BuyerProjectDetail_ProjectCatItem">Type of Project</string>
+    <string name="BuyerProjectDetail_ProjectBudgetTitle">Budget</string>
+    <string name="BuyerProjectDetail_ProjectBudgetUnit">RM </string>
+    <string name="BuyerProjectDetail_ProjectBudgetItem">788.80</string>
+    <string name="BuyerProjectDetail_ProjectDeliveryTitle">Delivery Days</string>
+    <string name="BuyerProjectDetail_ProjectDeliveryDays">X</string>
+    <string name="BuyerProjectDetail_ProjectDeliveryDaysUnit">Days</string>
+    <string name="BuyerProjectDetail_ProjectStatusTitle">Job Status</string>
+    <string name="BuyerProjectDetail_ProjectStatusDesc">Status</string>
+
+    <string name="btn_edit">EDIT</string>
+    <string name="btn_delete">DELETE</string>
+
+    <string name="BuyerCancelOrder_PageTitle">Cancel Order</string>
+    <string name="BuyerCancelOrder_ReasonTitle">Reason</string>
+    <string name="BuyerCancelOrder_ReasonDesc">Please mention your reasonable reason for cancelling the order.</string>
+
+    <string name="BuyerRateService_PageTitle">Rate Service</string>
+    <string name="BuyerRateService_Date">DD-MM-YY HH:MM</string>
+    <string name="BuyerRateService_OrderIDTitle">Order ID:</string>
+    <string name="BuyerRateService_Id">111002125</string>
+    <string name="BuyerRateService_ServiceTitle">Design minimalist and creative logo</string>
+    <string name="BuyerRateService_CommentTitle">Comments</string>
+    <string name="BuyerRateService_CommentDesc">Share your review and help others to make better choice!</string>
+
+    <string name="btn_submit">SUBMIT</string>
+
+
+    <string name="BankInfo_Title">Reminder:</string>
+    <string name="BankInfo_Desc">Only one bank account can be added.</string>
+    <string name="btn_addBankInfo">Add Bank Account</string>
+    <string name="btn_manageBankInfo">Edit Account</string>
+    <string name="btn_add">ADD</string>
+
+    <string name="BuyerServiceDetail_SellerNameTitle">Posted By:</string>
+    <string name="BuyerServiceDetail_SellerNameDesc">User Name</string>
+    <string name="BuyerServiceDetail_DeliveryDays">Delivery Days</string>
+    <string name="BuyerServiceDetail_DeliveryDaysTitle">Delivery Days</string>
+    <string name="BuyerServiceDetail_ServiceTitle">Service Title</string>
+    <string name="BuyerServiceDetail_ServiceDesc">Description</string>
+    <string name="BuyerServiceDetail_PriceTitle">Price</string>
+    <string name="BuyerServiceDetail_PriceDesc">RM</string>
+    <string name="BuyerServiceDetail_RatingNum">(Num)</string>
+    <string name="BuyerServiceDetail_AllServices">Other Services</string>
+    <string name="BuyerServiceDetailProfile_ViewAllServices">~ All Services ~</string>
+
+    <string name="BuyerServiceDetail_SampleDesign">— Sample Design —</string>
+    <string name="BuyerServiceDetail_NoDesignPreview">No Preview Available</string>
+
+    <string name="btn_review">Reviews</string>
+    <string name="btn_contact">CONTACT</string>
+    <string name="btn_purchase">BUY</string>
+
+    <string name="review_average">No Rating</string>
+
+    <string name="show_more">&#160;Show More</string>
+    <string name="show_less">&#160;Show Less</string>
+
+    <string name="BuyerCheckout_PageTitle">Order Checkout</string>
+    <string name="BuyerCheckout_ServiceTitle">Service Title</string>
+
+    <string name="BuyerCheckout_BuyerNameTitle">Buyer Name:</string>
+    <string name="BuyerCheckout_BuyerNameDesc">User Name</string>
+    <string name="BuyerCheckout_BankAccountTitle">Bank Information (Seller)</string>
+    <string name="BuyerCheckout_BankAccountCompany">Bank Name</string>
+    <string name="BuyerCheckout_BankAccountOwnerName">Beneficiary Name</string>
+    <string name="BuyerCheckout_BankAccountNumber">Account Number</string>
+    <string name="BuyerCheckout_PaymentTitle">Payment</string>
+    <string name="BuyerCheckout_payment_radioOnlineBanking">Online Banking</string>
+    <string name="BuyerCheckout_PaymentStatementTitle">Payment Statement (Image File)</string>
+    <string name="BuyerCheckout_PaymentStatementDesc">Please upload your bank transfer receipt/statement. Thank You.</string>
+    <string name="BuyerCheckout_OrderSummaryTitle">Order Summary</string>
+    <string name="BuyerCheckout_OrderSummaryDesc">Total:</string>
+    <string name="BuyerCheckout_OrderSummaryPrice">Price</string>
+
+    <string name="btn_confirm">CONFIRM</string>
+
+    <string name="Seller_ServicePost_PageTitle">Post a Service</string>
+    <string name="Seller_ServicePost_MainTitle1">Service Information</string>
+    <string name="Seller_ServicePost_Title">Title</string>
+    <string name="Seller_ServicePost_TitleDesc">Enter Service Title</string>
+    <string name="Seller_ServicePost_Desc">Description</string>
+    <string name="Seller_ServicePost_DesSub">Enter Service Information.
+    Eg: What kind of services included in this package?</string>
+    <string name="Seller_ServicePost_CategoryTitle">Category</string>
+    <string name="Seller_ServicePost_SubCategoryTitle">Sub-Category</string>
+    <string name="Seller_ServicePost_PriceTitle">Price (RM)</string>
+    <string name="Seller_ServicePost_PriceDesc">Enter Service Price</string>
+    <string name="Seller_ServicePost_DeliveryDaysTitle">Delivery Days</string>
+    <string name="Seller_ServicePost_DeliveryDaysDesc">Enter Service Delivery Days</string>
+    <string name="Seller_ServicePost_ImageUpload">Upload Cover Image</string>
+
+    <string name="btn_next">NEXT</string>
+
+    <string name="Seller_ServicePost_MainTitle2">Bank Information (Payment Method)</string>
+    <string name="Seller_ServicePost_BankNameTitle">Bank Name</string>
+    <string name="Seller_ServicePost_BankNameDesc">Enter Bank Name (Eg: Maybank)</string>
+    <string name="Seller_ServicePost_BeneficiaryNameTitle">Beneficiary Name</string>
+    <string name="Seller_ServicePost_BeneficiaryNameDesc">Enter Beneficiary Name (Account Owner)</string>
+    <string name="Seller_ServicePost_AccountNumTitle">Account Number</string>
+    <string name="Seller_ServicePost_AccountNumDesc">Enter Bank Account Number</string>
+
+    <string name="Seller_EditServicePost_PageTitle">Edit Service</string>
+    <string name="Seller_EditServicePost_PageTitle2">Edit Bank Information</string>
+
+    <string name="Seller_AvgRating">Average Rating</string>
+    <string name="Seller_AvgRatingOut">Out of 5.0</string>
+
+    <string name="Seller_btn_service">MY SERVICE</string>
+    <string name="Seller_btn_payment">PAYMENT</string>
+    <string name="Seller_btn_bankInfo">Bank Information</string>
+    <string name="Seller_btn_addService">Add Services</string>
+    <string name="Seller_btn_manageService">Manage Services</string>
+    <string name="Seller_btn_switchUser">Switch to Buyer</string>
+    <string name="Seller_btn_logout">Logout</string>
+
+    <string name="BuyerOrdersDetail_TaskTitle">Task Details</string>
+
+    <string name="SellerTasks_PageTitle">Tasks</string>
+    <string name="SellerTasks_btn_pending">Pending</string>
+    <string name="SellerTasks_btn_workInProgress">Work in Progress</string>
+    <string name="SellerTasks_btn_completed">Completed</string>
+    <string name="SellerTasks_btn_cancelled">Cancelled</string>
+
+    <string name="SellerViewJobDetail_PageTitle">View Job Details</string>
+    <string name="SellerViewJobDetail_ClientNameTitle">Posted By:</string>
+    <string name="SellerViewJobDetail_ClientNameDesc">Dianna Lim</string>
+    <string name="SellerViewJobDetail_JobTitle">Design appealing eatery menu</string>
+    <string name="SellerViewJobDetail_JobCategory">Graphics &amp; Design </string>
+    <string name="SellerViewJobDetail_JobPriceTitle">Budget</string>
+    <string name="SellerViewJobDetail_JobPriceUnit">RM </string>
+    <string name="SellerViewJobDetail_JobPriceDesc">Price</string>
+    <string name="SellerViewJobDetail_JobDeliveryTitle">Delivery Days</string>
+    <string name="SellerViewJobDetail_JobDeliveryDays">7</string>
+    <string name="SellerViewJobDetail_JobDeliveryDaysUnit">Days</string>
+    <string name="SellerViewJobDetail_JobDesc">I am looking for a graphic designer that has a creative idea on the food menu design.</string>
+    <string name="SellerViewJobDetail_Review">(Num)</string>
+
+    <string name="SellerViewJobDetail_AboutClientTitle">About Client</string>
+    <string name="SellerViewJobDetail_ClientLocation">Petaling Jaya, Selangor</string>
+    <string name="SellerViewJobDetail_ClientEmail">alanlee@gmail.com</string>
+    <string name="SellerViewJobDetail_ClientPhone">0102586479</string>
+
+    <string name="SellerViewPayment_PageTitle">Payment Statement</string>
+
+    <string name="SellerSerDetail_PageTitle">View Service Details</string>
+    <string name="SellerSerDetail_SerTitle">Design minimalist and creative logo</string>
+    <string name="SellerSerDetail_SerDesc">Description</string>
+    <string name="SellerSerDetail_SerCatTitle">Category</string>
+    <string name="SellerSerDetail_SerCatItem">Graphics &amp; Design </string>
+    <string name="SellerSerDetail_SerPriceTitle">Price</string>
+    <string name="SellerSerDetail_SerPriceUnit">RM</string>
+    <string name="SellerSerDetail_SerPriceItem">Value</string>
+    <string name="SellerSerDetail_SerDeliveryTitle">Delivery Days</string>
+    <string name="SellerSerDetail_SerDeliveryDays">3</string>
+    <string name="SellerSerDetail_SerDeliveryDaysUnit">Days</string>
+
+    <string name="BuyerManagePosting_PageTitle">Manage Postings</string>
+    <string name="BuyerManagePosting_JobTitle">Design appealing eatery menu</string>
+    <string name="BuyerManagePosting_JobStatus">Open</string>
+    <string name="BuyerManagePosting_JobDesc">I am looking for a graphic designer that has a creative idea on the food menu design.</string>
+
+    <string name="SellerBrowseJob_JobTitle">Design appealing eatery menu</string>
+    <string name="SellerBrowseJob_JobCategory">Graphics &amp; Design</string>
+    <string name="SellerBrowseJob_JobPriceUnit">RM </string>
+    <string name="SellerBrowseJob_JobPriceDesc">788.80</string>
+    <string name="SellerBrowseJob_JobDesc">I am looking for a graphic designer that has a creative idea on the food menu design.</string>
+
+    <string name="BuyerViewReview_PageTitle">Review</string>
+    <string name="BuyerViewReview_Name">User Name</string>
+    <string name="BuyerViewReview_Comment">Comment</string>
+
+    <string name="SellerViewReview_PageTitle">Review</string>
+    <string name="SellerViewReview_Name">User Name</string>
+    <string name="SellerViewReview_Comment">Comment</string>
+
+    <string name="PendingList_PageTitle">Pending</string>
+    <string name="WorkProgressList_PageTitle">Work in Progress</string>
+    <string name="SellerWorkProgressList_PageTitle">Work in Progress (Accepted)</string>
+    <string name="CompleteList_PageTitle">Completed</string>
+    <string name="RatedList_PageTitle">Rated</string>
+
+    <string name="BuyerOrderList_serTitle">Service Name</string>
+    <string name="BuyerOrderList_serCategory">Category </string>
+    <string name="BuyerOrderList_serDeliveryTitle">Delivery Days</string>
+    <string name="BuyerOrderList_serDeliveryDays">3</string>
+    <string name="BuyerOrderList_serStatusTitle">Status: </string>
+    <string name="BuyerOrderList_serStatus">Pending</string>
+    <string name="BuyerOrderList_serStatus2">In Progress</string>
+    <string name="BuyerOrderList_serStatus3">Completed</string>
+    <string name="BuyerOrderList_serStatus4">Rated</string>
+    <string name="BuyerOrderList_serStatus5">Cancelled</string>
+    <string name="BuyerOrderList_serPriceItem">Price</string>
+    <string name="BuyerOrderList_clientName">Seller Name</string>
+
+    <string name="BuyerOrderList_btn_cancel">Cancel</string>
+    <string name="BuyerOrderList_btn_complete">Completed</string>
+    <string name="BuyerOrderList_btn_rate">Rate</string>
+
+    <string name="ManageService_PageTitle">Manage Services</string>
+    <string name="ManageService_serTitle">Service Title</string>
+    <string name="ManageService_serCategory">Category</string>
+    <string name="ManageService_serPriceUnit">RM</string>
+    <string name="ManageService_serPriceItem">Price</string>
+    <string name="ManageService_AddSampleDesign">Add Sample Portfolio</string>
+    <string name="ManageService_ViewSampleDesign">Sample Portfolio</string>
+    <string name="ManageService_NoDesign">No Preview Found</string>
+
+    <string name="ManageService_btn_AddPortfolio">ADD</string>
+    <string name="ManageService_btn_UploadPortfolio">UPLOAD</string>
+    <string name="ManageService_btn_Portfolio">PORTFOLIO</string>
+    <string name="ManageService_btn_viewReview">REVIEW</string>
+
+    <string name="Portfolio_DesignName">Image Name</string>
+
+    <string name="SellerTaskList_serTitle">Design minimalist and creative logo</string>
+    <string name="SellerTaskList_serCategory">Graphics &amp; Design </string>
+    <string name="SellerTaskList_serDeliveryTitle">Delivery Days</string>
+    <string name="SellerTaskList_serDeliveryDays">3</string>
+    <string name="SellerTaskList_serStatusTitle">Status: </string>
+    <string name="SellerTaskList_serStatus">Pending</string>
+    <string name="SellerTaskList_serStatus2">In Progress</string>
+    <string name="SellerTaskList_serStatus3">Completed</string>
+    <string name="SellerTaskList_serStatus4">Cancelled</string>
+    <string name="SellerTaskList_serPriceItem">Price</string>
+    <string name="SellerTaskList_clientTitle">Buyer: </string>
+    <string name="SellerTaskList_clientName">User Name</string>
+
+    <string name="SellerTaskList_btn_viewPayment">VIEW PAYMENT</string>
+    <string name="SellerTaskList_btn_accepted">ACCEPTED</string>
+
+    <string name="ChatPageTitle">Inbox</string>
+    <string name="ChatPage_SMessage">Sender Message</string>
+    <string name="ChatPage_RMessage">Receiver Message</string>
+    <string name="DayTime">DD-MM-YY HH:MM</string>
+    <string name="ChatPage_UserName">User Name</string>
+    <string name="ChatPage_Status">Online Status</string>
+
+    <string name="Inbox_NoMessage">No Conversation Found.</string>
+    <string name="Inbox_NoPOrder">There is no pending order.</string>
+    <string name="Inbox_NoIPOrder">There is no progressing order.</string>
+    <string name="Inbox_NoCOrder">There is no completed order.</string>
+    <string name="Inbox_NoROrder">There is no rated order.</string>
+    <string name="Inbox_NoCancelOrder">There is no cancelled order.</string>
+    <string name="Manage_NoPosting">No Project Found.</string>
+
+    <string name="Task_NoPOrder">There is no pending task.</string>
+    <string name="Task_NoIPOrder">There is no progressing task.</string>
+    <string name="Task_NoCOrder">There is no completed task.</string>
+    <string name="Task_NoCllOrder">There is no cancelled task.</string>
+    <string name="Manage_NoServices">No Service Found.</string>
+    <string name="Portfolio_NoDesign">No Sample Design</string>
+
+    <string name="Review_NoReview">Sorry. There is no review.</string>
+    <string name="Services_NoService">Oops. No relevant services found.</string>
+    <string name="Services_NoService2">Stay Tune.</string>
+
+    <string name="Review_NoReceipt">No payment receipt found.</string>
+
+    <string name="faq_title">FAQs</string>
+    <string name="support_title">Contact Us</string>
+
+    <string name="faq_General">General Information</string>
+    <string name="faq_GeneralDetail">All accounts on MyFreelancer are both Buyer and Seller accounts by default.</string>
+    <string name="support_GeneralDetail">Contact Us</string>
+    <string name="support_GeneralDetail2">Please email us if you have any query about the application.</string>
+    <string name="support_GeneralDetail4">We will reply within 2 working days.</string>
+    <string name="support_GeneralDetail3">myfreelancers21@gmail.com</string>
+
+    <string name="faq_GeneralDetailSub">Tap "Switch To Seller" to switch your seller account and start selling</string>
+
+    <string name="faq_buyer">Buyer</string>
+    <string name="faq_buyer1">Browsing Services</string>
+    <string name="faq_buyerQue1">What kind of listings are found on MyFreelancer?</string>
+    <string name="faq_buyerAns1"><br>MyFreelancer offers a wide range of professional services in 6 main categories, namely Graphic &amp; Design, Writing &amp; Translation, Video &amp; Translation, Programming, Data and Digital Marketing.\n</br>
+    <br>\n</br><br>You can find any professional services related to these 6 main categories on our platform. </br>
+    </string>
+    <string name="faq_buyerQue2">How do I find a service?</string>
+    <string name="faq_buyerAns2"><br>You can browse and explore various services through categories at the home page.\n</br>
+    <br>\n</br><br>You can also search using keywords by tapping on the search bar at each category page to find any related services on that category.</br>
+    </string>
+
+    <string name="faq_buyerQue3">Where do I find the lowest price services?</string>
+    <string name="faq_buyerAns3"><br>You can find lowest price services in MyFreelancer under the ‘Lowest Price’ Section of the home page.\n</br>
+    <br>\n</br><br>The listings are showing all the services that equal or lower than RM300.</br>
+    </string>
+
+    <string name="faq_buyerQue4">How do I find my recently view services?</string>
+    <string name="faq_buyerAns4"><br>You can find all the services that recently viewed through the home page under the ‘Recently View’ section.\n</br>
+    <br>\n</br><br>It only will show the 10 latest recently view services.</br>
+    </string>
+
+    <string name="faq_buyer2">Project Posting</string>
+
+    <string name="faq_buyerQue5">What is Project Posting?</string>
+    <string name="faq_buyerAns5"><br>Our Project Posting feature aims to help the client (buyer) to find the professional services they require.\n</br>
+    <br>\n</br><br>Instead of spending time sifting through the available services, you can submit details of your service requirements and allow the freelancer to contact you.\n</br>
+    <br>\n</br><br>If your project meets the criteria of the freelancer(seller), the freelancer will contact you through the chat.</br>
+    </string>
+
+    <string name="faq_buyerQue6">How do I post a Project?</string>
+    <string name="faq_buyerAns6"><br>You may tab on ‘Post Project’ at buyer account to start posting your project.\n</br>
+    <br>\n</br><br>You need to fill up the Project Title, Description, Budget and Delivery Days.\n</br>
+    <br>\n</br><br>At the same time, you also need to select the correct category of your project and lastly choose the status as ‘Open’.\n</br>
+    <br>\n</br><br>Once you successfully find a freelancer for your project, you may update the status to ‘Closed’.\n</br>
+    <br>\n</br><br>Only the project in ‘Open’ status able to be seen by the freelancer(seller).</br>
+    </string>
+
+    <string name="faq_buyerQue7">How do I manage my Project Post?</string>
+
+    <string name="faq_buyerAns7"><br>You can update all the information of your project, including the Project Title, Description, Budget, Category, Delivery Days and Status.\n</br>
+    <br>\n</br><br>You may update the status to Closed as you find a suitable freelancer for your project.\n</br>
+    <br>\n</br><br>At the same time, you also need to select the correct category of your project and lastly choose the status as ‘Open’.\n</br>
+    <br>\n</br><br>You may also can update the status to Completed as your own record once your project is fully completed.\n</br>
+    <br>\n</br><br>If you would like to remove your Project Post, select the relevant service you want to delete and click the ‘Delete’ button.</br>
+    </string>
+
+    <string name="faq_buyer3">Payment</string>
+    <string name="faq_buyerQue8">What kind of the payment method provided?</string>
+
+    <string name="faq_buyerAns8"><br>All the payment information has been included on the checkout page.\n</br>
+    <br>\n</br><br>However, you need to discuss with the freelancer(seller) before make any payment for the services to avoid any inconvenience caused.</br>
+
+    </string>
+
+    <string name="faq_buyerQue9">How do I process the payment?</string>
+
+    <string name="faq_buyerAns9"><br>There are two ways of the payment process on MyFreelancer.\n</br>
+    <br>\n</br><br>First, the payment only needs to be transferred after your project have been done by the freelancer.You need to send the payment slip privately through the chat.\n</br>
+    <br>\n</br><br>Second, the half or full payment needs to be transferred to the freelancer before your order can be proceed.\n</br>
+    <br>\n</br><br>You need to send the payment slip during your order checkout and then inform the seller for order confirmed. Select “Choose File” and select your payment slip to submit your payment.\n</br>
+    </string>
+
+    <string name="faq_buyer4">Manage Orders</string>
+    <string name="faq_buyerQue10">What does the Order Status mean?</string>
+
+    <string name="faq_buyerAns10"><br>Pending: Waiting for the seller to accept your order.\n</br>
+    <br>\n</br><br>Work In Progress: The seller is working on your order.\n</br>
+    <br>\n</br><br>Completed: You have confirmed the order and need to transfer the payment to seller (if relevant).\n</br>
+    <br>\n</br><br>Rated: You have rated the services.</br>
+
+    </string>
+
+    <string name="faq_buyerQue11">How do I change my Order Status?</string>
+
+    <string name="faq_buyerAns11"><br>You only can change the status on Work In Progress Order and Completed Order.\n</br>
+    <br>\n</br><br>Select the Work In Progress List, then click the button “Completed” to change the status from Work In Progress to Completed.\n</br>
+    <br>\n</br><br>Select the Completed List, and you can rate the order that have been completed.</br>
+    </string>
+
+    <string name="faq_seller">Seller</string>
+    <string name="faq_seller1">Services Listing</string>
+    <string name="faq_sellerQue1">How to promote my services in MyFreelancer platform?</string>
+
+    <string name="faq_sellerAns1"><br>If you are a freelancer, you can publish your own professional service to MyFreelancer platform.\n</br>
+    <br>\n</br><br>You need to fill up all the necessary information, such as the Service Title, Description, Category, Price and Delivery Days.\n</br>
+    <br>\n</br><br>You also need to select a photo as your service’s cover photo.\n</br>
+    <br>\n</br><br>You can add the portfolio for every service (if applicable) after you successfully publish your service.</br>
+    </string>
+
+    <string name="faq_seller2">Manage Services</string>
+    <string name="faq_sellerQue2">How do I edit my services?</string>
+
+    <string name="faq_sellerAns2"><br>You can edit the services by clicking the button “Manage Services” at seller account.\n</br>
+    <br>\n</br><br>Inside the “Manage Services”, 4 activities can be done.</br>
+    <br>\n</br><br>1. You can directly click on the service to view the detail. If want to delete the service, you can click on “Delete” button inside the detail page.\n</br>
+    <br>\n</br><br>2. You can add/edit the portfolio for each service.\n</br>
+    <br>\n</br><br>3. You can edit the service information, such as Title, Description, Category, Price, Delivery Days and Cover Photo.\n</br>
+    <br>\n</br><br>4. You can view all the reviews given by buyer for each of the service.</br>
+    </string>
+
+    <string name="faq_seller3">Job Browsing</string>
+    <string name="faq_sellerQue3">Can I find the freelance job directly through MyFreelancer platform?</string>
+
+    <string name="faq_sellerAns3"><br>Instead of Service Posting, you can also find a job through the job browsing.\n</br>
+    <br>\n</br><br>You can view all the project that posted by the buyer at the seller home page.\n</br>
+    <br>\n</br><br>If the project is fulfill your criteria, then you may contact privately through the chat feature to have the discussion with the client.</br>
+    </string>
+
+
+    <string name="faq_seller4">Payment</string>
+    <string name="faq_sellerQue4">How do I receive the payment from the buyer?</string>
+
+    <string name="faq_sellerAns4"><br>You need to add your own bank information for the payment purpose.\n</br>
+    <br>\n</br><br>Only one bank account can be added for each seller account.\n</br>
+    <br>\n</br><br>However, you can edit the bank information, such as Bank Name, Beneficiary Name and Account Number.\n</br>
+    <br>\n</br><br>All the bank information needs to be valid, so that the buyer can make the payment successfully.</br>
+    </string>
+
+    <string name="Payment_NoPaymentSlip">No payment slip has been uploaded.</string>
+
+</resources>

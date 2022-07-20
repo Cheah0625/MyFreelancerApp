@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyerCancelOrder">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRateSer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue2">
+
+        <ImageButton
+            android:id="@+id/backToBuyerPendingList"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/dark_blue2"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BuyerCancelOrder_PageTitle"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:outlineAmbientShadowColor="@color/grey"
+        android:outlineSpotShadowColor="@color/grey"
+        android:background="@color/light_grey3" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_below="@+id/linearLayoutRateSer"
+        android:layout_above="@id/linearProBtnRate"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:text="@string/BuyerRateService_OrderIDTitle"/>
+
+                <TextView
+                    android:id="@+id/cancel_ordID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="14dp"
+                    android:text="@string/BuyerRateService_Id"/>
+
+                <TextView
+                    android:id="@+id/cancel_ordServiceID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="."/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/cancel_serTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:text="@string/BuyerRateService_ServiceTitle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="17dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="375dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/light_grey2"
+                    android:backgroundTintMode="src_atop"/>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="@string/BuyerCancelOrder_ReasonTitle"/>
+
+                <EditText
+                    android:id="@+id/cancel_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:background="@drawable/custom_input"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_gravity="center"
+                    android:paddingBottom="20dp"
+                    android:gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="14dp"
+                    android:hint="@string/BuyerCancelOrder_ReasonDesc"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textColorHint="@color/grey"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearProBtnRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/btn_cancelSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:cornerRadius="10dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:stateListAnimator="@null"
+            android:text="@string/btn_submit" />
+    </LinearLayout>
+
+</RelativeLayout>

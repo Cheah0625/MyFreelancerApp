@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerAccount"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lLayoutSellerHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/changa_one"
+                android:paddingStart="17dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                app:fontFamily="@font/changa_one" />
+
+            <ImageButton
+                android:id="@+id/btn_sellerAcc_message"
+                android:layout_width="68dp"
+                android:layout_height="65dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/dark_blue2"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:src="@drawable/ic_inbox" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"
+        android:backgroundTintMode="src_atop"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_below="@+id/lLayoutSellerHome"
+        android:layout_above="@id/sellerNavigation"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_sellerProfilePic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="26dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile" />-->
+
+            <ImageView
+                android:id="@+id/icon_shop"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/acc_seller" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_sellerAccUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SignUp_FullName"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RatingBar
+                            android:id="@+id/seller_RatingBarAverage"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="3dp"
+                            android:layout_alignParentStart="true"
+                            android:numStars="1"
+                            android:progressTint="@color/yellow"
+                            android:secondaryProgressTint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/seller_avgRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="@string/Seller_AvgRating"
+                            android:layout_centerInParent="true"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@+id/seller_RatingBarAverage"
+                            android:textColor="@color/yellow"
+                            android:textSize="13dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <!--<TextView
+                    android:id="@+id/tv_sellerAccUserEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SignUp_Email"
+                    android:textSize="12dp"
+                    android:textColor="@color/black" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold"
+                    android:layout_marginStart="25dp"
+                    android:textColor="@color/grey2"
+                    android:text="@string/Seller_btn_service"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_addService"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/light_grey4"
+                    android:layout_marginEnd="20dp"/>
+
+                <ImageView
+                    android:id="@+id/icon_addService"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/acc_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/Seller_btn_addService"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/icon_addService"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="355dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_manageService"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/light_grey4"
+                    android:layout_marginEnd="20dp"/>
+
+                <ImageView
+                    android:id="@+id/icon_manageService"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/acc_manage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/Seller_btn_manageService"
+                    android:layout_toEndOf="@+id/icon_manageService"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="351dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold"
+                    android:layout_marginStart="25dp"
+                    android:textColor="@color/grey2"
+                    android:text="@string/Seller_btn_payment"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_bankInfo"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/light_grey4"
+                    android:layout_marginEnd="20dp"/>
+
+                <ImageView
+                    android:id="@+id/icon_bank"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/acc_bank" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/Seller_btn_bankInfo"
+                    android:layout_toEndOf="@+id/icon_bank"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="351dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold"
+                    android:layout_marginStart="25dp"
+                    android:textColor="@color/grey2"
+                    android:text="@string/BuyerAcc_Title_General"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_switchBuyer"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/light_grey4"
+                    android:layout_marginEnd="20dp"/>
+
+                <ImageView
+                    android:id="@+id/icon_switchBuyer"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/acc_switch" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/Seller_btn_switchUser"
+                    android:layout_toEndOf="@+id/icon_switchBuyer"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="351dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_sellerLogout"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/light_grey4"
+                    android:layout_marginEnd="20dp"/>
+
+                <ImageView
+                    android:id="@+id/icon_logoutS"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/acc_logout" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/Seller_btn_logout"
+                    android:layout_toEndOf="@+id/icon_logoutS"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="351dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/sellerNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/seller"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
